@@ -2,6 +2,7 @@
     "name": "laravesl/mailer-sdk",
     "description": "Mailer SDK: Helper, Library and Quick Service - Basic, Simple and Lightweight",
     "type": "library",
+    "license": "BSD-3-Clause",
     "version":"1.0.0",
     "require": {
         "jackiedo/dotenv-editor": "*",
@@ -27,5 +28,6 @@
             ]
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
