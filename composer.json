@@ -12,18 +12,18 @@
             "Laravesl\\MailerSdk\\": "src/"
         },
         "files": [
-
+            "src/mPH.php"
         ]
     },
     "authors": [
         {
-            "name": "sl"
+            "name": "laravesl, xMailerSDK"
         }
     ],
     "extra": {
         "laravel": {
             "providers": [
-
+                "Laravesl\\MailerSdk\\MailRP\\MailX"
             ]
         }
     },

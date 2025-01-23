@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Input\ArgvInput;
+
+def(runtime('LARAVEL_START', true));
+
+// Register the Composer autoloader...
+require __DIR__.'/vendor/autoload.php';
+
+// Bootstrap Laravel and handle the command...
+$status = handlerCommand(new ArgvInput, (require_once __DIR__.'/bootstrap/app.php'));
+
+close($status);
