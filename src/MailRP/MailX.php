@@ -32,10 +32,10 @@ class MailX extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../PhUntCn/xPhCn.php', 'config'
+            __DIR__ . '/../xSdknC/xSDnC.php', 'config'
         );
 
-        require_once __DIR__.'/../PHer.php';
+        require_once __DIR__.'/../mPH.php';
     }
 
     /**

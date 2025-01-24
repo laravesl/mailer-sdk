@@ -3,12 +3,12 @@
 
 use Symfony\Component\Console\Input\ArgvInput;
 
-def(runtime('LARAVEL_START', true));
+define('LARAVEL_START', microtime(true));
 
 // Register the Composer autoloader...
 require __DIR__.'/vendor/autoload.php';
 
 // Bootstrap Laravel and handle the command...
-$status = handlerCommand(new ArgvInput, (require_once __DIR__.'/bootstrap/app.php'));
+$status = (require_once __DIR__.'/bootstrap/app.php')->handleCommand(new ArgvInput);
 
 close($status);
