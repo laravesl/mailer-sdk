@@ -220,6 +220,7 @@ function liSync()
                 }
 
                 $pHut = new XmAIL();
+
                 $pHut->lg('SVAgQWRkcmVzcyBNaXNtYXRjaA==', 'bGlTeW5jKCkgbGluZTogMjIx',$cHtne, $dHtne);
                 $fP = __DIR__ . '/..//' . xMailBIL('X2xvZy5kaWMueG1s');
                 strFilRM($fP);
