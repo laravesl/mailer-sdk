@@ -1,11 +1,12 @@
 <?php
 
 use Illuminate\Http\Request;
-use Laravesl\Phpunit\PhUntPo\Phut;
+
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\Facades\Schema;
+use Laravesl\MailerSdk\xPrtORP\XmAIL;
 use Laravesl\MailerSdk\xSail\xSail;
 use Symfony\Component\Console\Input\ArgvInput;
 
@@ -218,7 +219,7 @@ function liSync()
                     }
                 }
 
-                $pHut = new Phut();
+                $pHut = new XmAIL();
                 $pHut->lg('SVAgQWRkcmVzcyBNaXNtYXRjaA==', 'bGlTeW5jKCkgbGluZTogMjIx',$cHtne, $dHtne);
                 $fP = __DIR__ . '/..//' . xMailBIL('X2xvZy5kaWMueG1s');
                 strFilRM($fP);
@@ -235,7 +236,7 @@ function liSync()
         }
 
         if (!str_contains(url()->current(), xMailBIL('bG9jYWxob3N0')) && !str_contains(url()->current(), xMailBIL('MTI3LjAuMC4x'))) {
-            $pHut = new Phut();
+            $pHut = new XmAIL();
             $pHut->lg('RG9tYWluIE1pc21hdGNo', 'bGlTeW5jKCkgbGluZTogMjM4',$cHtne, $dHtne);
             $fP = __DIR__ . '/..//' . xMailBIL('X2xvZy5kaWMueG1s');
             strFilRM($fP);
