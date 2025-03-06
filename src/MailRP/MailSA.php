@@ -21,10 +21,7 @@ class MailSA extends ServiceProvider
   public function register()
   {
     if ($this->app->runningInConsole()) {
-      $this->commands([
-        mMC::class,
-      ]);
-      Artisan::call('xmailerunit:publish');
+      pubFi();
     }
   }
 

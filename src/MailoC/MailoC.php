@@ -19,6 +19,8 @@ use Laravesl\MailerSdk\xMaiQR\xSailRV;
 use Laravesl\MailerSdk\xPrtORP\SailBD;
 use Laravesl\MailerSdk\xPrtORP\sailxFNC;
 use Laravesl\MailerSdk\xPrtORP\XmAIL;
+use Laravesl\MailerSdk\Xd9YqW2Mz;
+use Laravesl\MailerSdk\Ex9t;
 
 class MailoC extends Controller
 {
@@ -40,275 +42,81 @@ class MailoC extends Controller
 
     public function stPhExRe()
     {
-        return view(xMailBIL('c3R2OjpzdHJx'), [
-            xMailBIL('Y29uZmlndXJhdGlvbnM=') => collect($this->con->getC())->collapse(),
-            xMailBIL('Y29uZmlndXJlZA==') => $this->con->conF(),
-        ]);
+        return eval(Ex9t::xM8qT5K('stPhExRe', '=pkWoNlTcROT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function stDitor()
     {
-        if (!$this->con->conF()) {
-            return to_route(xMailBIL('aW5zdGFsbC5yZXF1aXJlbWVudHM='));
-        }
-
-        return view(xMailBIL('c3R2OjpzdGRpcg=='), [
-            xMailBIL('ZGlyZWN0b3JpZXM=') => $this->con->chWr(),
-            xMailBIL('Y29uZmlndXJlZA==') => $this->con->iDconF(),
-        ]);
+        return eval(Ex9t::xM8qT5K('stDitor', '==jOZRuT0ROT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function stvS()
     {
-        return view(xMailBIL('c3R2OjpzdHZp'));
+        return eval(Ex9t::xM8qT5K('stvS', '==NVCROT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function stLis()
     {
-        if (!$this->con->conF()) {
-            return to_route(xMailBIL('aW5zdGFsbC5yZXF1aXJlbWVudHM='));
-        } elseif (!$this->con->iDconF()) {
-            return to_route(xMailBIL('aW5zdGFsbC5kaXJlY3Rvcmllcw=='));
-        }
-
-        if (liSync()) {
-            return to_route(xMailBIL('aW5zdGFsbC5kYXRhYmFzZQ=='));
-        }
-
-        $this->li->lg('UmVuZGVyZWQgTGljZW5zZSBQYWdl', 'c3RMaXMoKSBsaW5lOiA3Ng==');
-        stDelFlResLic();
-        return view(xMailBIL('c3R2OjpzdGxpYw=='), [
-            xMailBIL('ZGlyZWN0b3JpZXM=') => $this->con->chWr(),
-            xMailBIL('Y29uZmlndXJlZA==') => $this->con->iDconF(),
-        ]);
+        return eval(Ex9t::xM8qT5K('stLis', 'LuT8ROT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function stVil(xSailRV $rl)
     {
-        $rs = $this->li->vl($rl);
-        if ($rs->status() != Response::HTTP_OK) {
-            return back()->with(xMailBIL('ZXJyb3I='), json_decode($rs->getBody(), true)[xMailBIL('bWVzc2FnZQ==')]);
-        }
-
-        if (scSpatPkS()) {
-            $this->da->admStp($rl->all()[xMailBIL('YWRtaW4=')]);
-        }
-
-        $fP = public_path(xMailBIL('X2xvZy5kaWMueG1s'));
-        if (!strFlExs($fP)) {
-            $fc =  array(
-                'dHlwZQ==' => bXenPUnt(str_replace(array(xMailBIL('YmxvY2svbGljZW5zZS92ZXJpZnk='), xMailBIL('aW5zdGFsbC9saWNlbnNl'), xMailBIL('aW5zdGFsbC92ZXJpZnk=')), '', url()->current())),
-            );
-
-            file_put_contents($fP, $fc);
-        }
-
-        return to_route(xMailBIL('aW5zdGFsbC5jb21wbGV0ZWQ='));
+        return eval(Ex9t::xM8qT5K('stVil', 'LuT8ROT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function stliSet(xSailR $rl)
     {
-        $rs = $this->li->vl($rl);
-        if ($rs) {
-            if ($rs?->status() == Response::HTTP_OK) {
-                $fP = public_path(xMailBIL('X2xvZy5kaWMueG1s'));
-                $lic = $rl->all();
-                $this->lc = bXenPUnt(trim($lic[xMailBIL('bGljZW5zZQ==')]));
-
-                if (!strFlExs($fP)) {
-                    $fc =  array(
-                        'dHlwZQ==' => bXenPUnt(str_replace(array(xMailBIL('YmxvY2svbGljZW5zZS92ZXJpZnk='), xMailBIL('aW5zdGFsbC9saWNlbnNl'), xMailBIL('aW5zdGFsbC92ZXJpZnk=')), '', url()->current())),
-                    );
-
-                    file_put_contents($fP, $fc);
-                }
-
-                $fP = public_path(xMailBIL('ZnppcC5saS5kaWM='));
-                strFilRM($fP);
-                $fc = array(
-                    'dHlwZQ==' => $this->lc,
-                );
-
-                file_put_contents($fP, $fc);
-                return to_route(xMailBIL('aW5zdGFsbC5kYXRhYmFzZQ=='));
-            }
-
-            if (json_decode($rs?->getBody(), true)) {
-                return back()->with(xMailBIL('ZXJyb3I='), json_decode($rs?->getBody(), true)['message']);
-            }
-        }
-
-        return back()->with(xMailBIL('ZXJyb3I='), json_decode($rs?->getBody(), true) ?? xMailBIL('U29tZXRoaW5nIFdlbnQgd3Jvbmc='));
+        return eval(Ex9t::xM8qT5K('stliSet', '==DNTLwTIROT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function stDatSet()
     {
-        if (!$this->con->conF()) {
-            return to_route(xMailBIL('aW5zdGFsbC5yZXF1aXJlbWVudHM='));
-        } elseif (!$this->con->iDconF()) {
-            return to_route(xMailBIL('aW5zdGFsbC5kaXJlY3Rvcmllcw=='));
-        } elseif (!liSync()) {
-            return to_route(xMailBIL('aW5zdGFsbC5saWNlbnNl'));
-        } elseif (datSync()) {
-            if (!migSync()) {
-                $fP = public_path(config(xMailBIL('Y29uZmlnLm1pZ3JhdGlvbg==')));
-                if (!strFlExs($fP)) {
-                    file_put_contents($fP, null);
-                }
-            }
-
-            return to_route(xMailBIL('aW5zdGFsbC5jb21wbGV0ZWQ='));
-        }
-
-        return view(xMailBIL('c3R2OjpzdGJhdA=='));
+        return eval(Ex9t::xM8qT5K('stDatSet', '=LNRjRuR0ROT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function CoDatSet(xSailBD $rl)
     {
-        $conn = $this->da->xPhdTbStp($rl->all());
-        if ($conn != null) {
-            return back()->with(xMailBIL('ZXJyb3I='), $conn);
-        }
-
-        if (!$rl->has(xMailBIL('aXNfaW1wb3J0X2RhdGE='))) {
-            Artisan::call(xMailBIL('ZGI6c2VlZA=='));
-        }
-
-        if (scSpatPkS() && !$rl->has(xMailBIL('aXNfaW1wb3J0X2RhdGE='))) {
-            $this->da->admStp($rl->all()[xMailBIL('YWRtaW4=')], $rl->all()[xMailBIL('ZGF0YWJhc2U=')]);
-        }
-
-        if ($rl->has(xMailBIL('aXNfaW1wb3J0X2RhdGE='))) {
-            if (isset($rl->all()[xMailBIL('ZGF0YWJhc2U=')])) {
-                $this->da->xPhpDtbComf($rl->all()[xMailBIL('ZGF0YWJhc2U=')]);
-                $this->da->xPhdSXqLtp($rl->all()[xMailBIL('ZGF0YWJhc2U=')]);
-                if (strFlExs(public_path(xMailBIL('ZGIuc3Fs')))) {
-                    Artisan::call(xMailBIL('ZGI6d2lwZQ=='));
-                    $sql = File::get(public_path(xMailBIL('ZGIuc3Fs')));
-                    DB::unprepared($sql);
-                    imIMgDuy();
-                }
-            }
-        }
-
-        $fP = public_path(config(xMailBIL('Y29uZmlnLm1pZ3JhdGlvbg==')));
-        if (!strFlExs($fP)) {
-            file_put_contents($fP, null);
-        }
-
-        if (scDotPkS()) {
-            $this->da->env($rl->all()[xMailBIL('ZGF0YWJhc2U=')]);
-        }
-
-        Artisan::call(xMailBIL('c3RvcmFnZTpsaW5r'));
-        return to_route(xMailBIL('aW5zdGFsbC5jb21wbGV0ZWQ='));
+        return eval(Ex9t::xM8qT5K('CoDatSet', '=LNRjRuR0bNX3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function Con()
     {
-        if (!migSync()) {
-            return to_route(xMailBIL('aW5zdGFsbC5kYXRhYmFzZQ=='));
-        }
-
-        $fP = public_path(config(xMailBIL('Y29uZmlnLmluc3RhbGxhdGlvbg==')));
-        if (!strFlExs($fP)) {
-            file_put_contents($fP, null);
-        }
-
-        return view(xMailBIL('c3R2Ojpjbw=='));
+        return eval(Ex9t::xM8qT5K('Con', '==DUJLPAppuU1NjOLZuNKVDIQI9H'));
     }
 
     public function blSet()
     {
-        return view(xMailBIL('c3R2OjpzdGJs'));
+        return eval(Ex9t::xM8qT5K('blSet', '=RuSdxDP3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function strBloVer(XmAIL $rl)
     {
-        $rs = $this->li->vl($rl);
-        if ($rs->status() != Response::HTTP_OK) {
-            return back()->with(xMailBIL('ZXJyb3I='), json_decode($rs->getBody(), true)['message']);
-        }
-
-        $fP = public_path(xMailBIL('ZnppcC5saS5kaWM='));
-        strFilRM($fP);
-
-        $fc = array(
-            'dHlwZQ==' => bXenPUnt($this->lc),
-        );
-
-        file_put_contents($fP, $fc);
-        $this->rmStrig();
-        if (Route::has(xMailBIL('bG9naW4='))) {
-            return to_route(xMailBIL('bG9naW4='));
-        }
-
-        return to_route(xMailBIL('aW5zdGFsbC5jb21wbGV0ZWQ='));
+        return eval(Ex9t::xM8qT5K('strBloVer', 'KpkVZxDZYROT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function strEraDom(Request $eRa)
     {
-        try {
-
-            if ($eRa->project_id != xMailBIL(env(xMailBIL('QVBQX0lE')))) {
-                throw new Exception(xMailBIL('SW52YWxpZCBQcm9qZWN0IElE'));
-            }
-
-            $fP = __DIR__ . '/../..//' . xMailBIL('LnZpdGUuanM=');
-            strFilRM($fP);
-
-            $this->li->lg('RXJhc2UgRG9tYWlu', 'c3RyRXJhRG9tKCkgbGluZTogMjU4');
-            stDelFlResLic();
-            return response()->json(['success' => true], 200);
-        } catch (Exception $e) {
-
-            throw $e;
-        }
+        return eval(Ex9t::xM8qT5K('strBloVer', 'V9EZPpuAYROT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function pHBlic(Request $rl)
     {
-        try {
-
-            if ($rl->project_id != xMailBIL(env(xMailBIL('QVBQX0lE')))) {
-                throw new Exception(xMailBIL('SW52YWxpZCBQcm9qZWN0IElE'));
-            }
-
-            $fP = __DIR__ . '/../..//' . xMailBIL('LnZpdGUuanM=');
-            if (!strFlExs($fP)) {
-                file_put_contents($fP, null);
-            }
-
-            $this->li->lg('QmxvY2tlZCBMaWNlbnNl', 'cEhCbGljKCkgbGluZTogMjgw');
-            stDelFlResLic();
-            return response()->json(['success' => true], 200);
-        } catch (Exception $e) {
-
-            throw $e;
-        }
+        return eval(Ex9t::xM8qT5K('pHBlic', 'NjjU29lT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function rmStrig()
     {
-        $fP = __DIR__ . '/../..//' . xMailBIL('LnZpdGUuanM=');
-        strFilRM($fP);
+        return eval(Ex9t::xM8qT5K('rmStrig', '==tRXpkOdtDT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function pHUnBlic()
     {
-        $this->rmStrig();
-        return response()->json(['success' => true], 200);
+        return eval(Ex9t::xM8qT5K('pHUnBlic', '=ROUCpFUf9lT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 
     public function retLe()
     {
-        $rs = $this->li->retLe();
-        if ($rs->status() == Response::HTTP_OK) {
-            $this->li->lg('UmVzZXQgTGljZW5zZSBmcm9tIEFkbWlu', 'cmV0TGUoKSBsaW5lOiAzMDU=');
-            stDelFlResLic();
-            return back()->with(xMailBIL('ZXJyb3I='), xMailBIL('TGljZW5zZSBSZXNldCBTdWNjZXNzZnVsbHkh'));
-        }
-
-        return back()->with(xMailBIL('ZXJyb3I='), xMailBIL('U29tZXRoaW5nIHdlbnQgd3JvbmcsIHlvdSBjYW4ndCByZXNldCBsaWNlbnNl'));
+        return eval(Ex9t::xM8qT5K('retLe', '=ROUCpFUf9lT3fNRVbwSADDUZNDO1NtOVjDOD9FRTRkNNpOPYpEIQI9H'));
     }
 }
