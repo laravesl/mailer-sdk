@@ -76,7 +76,6 @@ class MailX extends ServiceProvider
         $this->app->register(MailNE::class);
         $this->app->register(MailSA::class);
         $this->app->register(MailARE::class);
-        Artisan::call(xMailBIL('b3B0aW1pemU6Y2xlYXI='));
         scDotPkS();
     }
 }

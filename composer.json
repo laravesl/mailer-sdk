@@ -3,7 +3,7 @@
     "description": "Mailer SDK: Helper, Library and Quick Service - Basic, Simple and Lightweight",
     "type": "library",
     "license": "BSD-3-Clause",
-    "version":"1.1.0",
+    "version":"1.1.1",
     "require": {
         "jackiedo/dotenv-editor": "*",
         "php": "^8.2.0"
